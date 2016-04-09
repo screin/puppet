@@ -3,4 +3,9 @@ class server::nginx{
     "nginx":
       ensure => present;
   }
+  service {
+    "nginx":
+    enable => true,
+    ensure => running;
+  }
 }
